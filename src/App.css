@@ -1,0 +1,288 @@
+/* App */
+
+.App{
+  background: rgb(193, 255, 192);
+  width:60%;
+  min-height: 100vh;
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* Header */
+.Header{
+  background-color: transparent;
+  color: rgb(47, 0, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px auto;
+  column-gap: 10px;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.Header span{
+  font-size: 1.8rem;
+  color: rgb(105, 0, 253);
+  position: relative;
+  top: 3px;
+}
+
+/* Home */
+.Home{
+ background: white;
+ width: 80%;
+ margin: 10px auto;
+ padding: 15px 10px;
+ border-radius: 20px;
+ box-sizing: border-box;
+ margin-bottom: 30px;
+}
+
+/*AddList*/
+.AddList{
+  width: 90%;
+  padding:15px 10px;
+  margin: 20px auto;
+  background-color: rgb(187, 245, 182);
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  gap: 30px;
+}
+
+.inputBtn{
+  background-color: rgb(255, 255, 255);
+  padding:0;
+  display: flex;
+  flex-grow: 3;
+  border-radius: 15px;
+}
+
+.inputBtn input{
+  border: none;
+  outline: none;
+  flex-grow: 4;
+  background: transparent;
+  font-size: 18px;
+  padding: 5px 16px;
+}
+.inputBtn button{
+  border: none;
+  flex-grow: 1;
+  padding: 5px 16px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  background: rgb(74, 255, 28);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+.inputBtn button:hover{
+  background: rgb(0, 230, 0);
+  color: white;
+}
+.inputBtn button .addIcon{
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  top: 1.5px;
+}
+
+.sideBar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  background-color: blue;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+.sideBar span{ 
+  cursor: pointer;
+}
+.sideBar span .active{
+  color: aliceblue;
+}
+.sideBar .options{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+.sideBar .options span{
+  display: flex;
+  align-items: center;
+}
+.sideBar .options span:hover{
+  color: black;
+}
+
+/*Lists*/
+.Lists ,ul{
+   background: rgb(255, 255, 255);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   row-gap: 8px;
+   padding: 10px 15px;
+}
+.Lists li{
+  display: flex;
+  align-items: center;
+  flex-grow: 4;
+  width: 90%;
+  background: rgb(189, 251, 188);
+  padding: 5px 10px;
+  border: 2px solid rgb(72, 248, 69);
+}
+  .Lists li .task{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    column-gap: 20px;
+  }
+  .Lists li .task input{
+    min-width: 30px;
+    min-height: 30px;
+    padding: 7px 5px 7px 10px;
+    cursor: pointer;
+  }
+  .Lists li .task .active{
+    text-decoration:line-through
+  }
+  .Lists li .task label{
+    list-style: none;
+    font-size: 20px;
+  }
+  .Lists li button{
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);  
+    padding: 7px 10px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .Lists li button:hover{
+    color: red;
+    transition: 0.1s;
+  }
+
+  @media only screen and (max-width : 1150px) {
+    .App{
+      width:75%;
+    }
+    .Home{
+      width: 85%;
+    }
+
+
+  }
+
+  @media only screen and (max-width : 850px) {
+    .App{
+      width:100%;
+    }
+    .Home{
+      width: 90%;
+    }
+    .AddList{
+      width: 90%;
+      padding:12px 8px;
+      margin: 15px auto;
+      gap: 20px;
+    }
+    
+.inputBtn{
+  background-color: rgb(255, 255, 255);
+  padding:0;
+  display: flex;
+  flex-grow: 3;
+  border-radius: 15px;
+}
+
+.inputBtn input{
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+.inputBtn button{
+  border: none;
+  flex-grow: 1;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  column-gap: 6px;
+}
+  }
+
+  @media only screen and (max-width : 550px) {
+    .App{
+      width:100%;
+    }
+    .Home{
+      width: 95%;
+    }
+    .AddList{
+      width: 90%;
+      padding:12px 8px;
+      margin: 15px auto;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+.inputBtn{
+  background-color: rgb(255, 255, 255);
+  padding:0;
+  display: flex;
+  flex-grow: 3;
+  border-radius: 10px;
+  width: 95%;
+}
+
+.inputBtn input{
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 10px;
+}
+.inputBtn button{
+  border: none;
+  flex-grow: 1;
+  padding: 3px 6px;
+  border-radius: 10px;
+  font-size: 14px;
+  column-gap: 6px;
+}
+.sideBar{
+  font-size: 14px;
+}
+.Lists li{
+  width: 100%;
+}
+.Lists li .task input{
+  width: 25px;
+  height: 25px;
+  padding: 5px 3px 5px 7px;
+}
+.Lists li button{
+  font-size: 1.5rem;
+}
+.Lists li .task{
+  column-gap: 12px;
+}
+.Lists li .task label{
+  list-style: none;
+  font-size: 16px;
+}
+  }
